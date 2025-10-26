@@ -1,3 +1,4 @@
+// layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -26,13 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-linear-to-br from-gray-900 to-gray-800">
+    <html lang="en" className="bg-gray-900">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900`}
       >
-        <div className="min-h-dvh bg-linear-to-br from-gray-900 to-gray-800 overflow-x-hidden overscroll-none">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
