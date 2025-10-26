@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="min-h-dvh bg-linear-to-br from-gray-900 to-gray-800">
+        <div className="min-h-dvh bg-linear-to-br from-gray-900 to-gray-800 overflow-x-hidden overscroll-none">
           {children}
         </div>
       </body>
